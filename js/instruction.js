@@ -8,7 +8,10 @@ function calleye() {
   document.querySelector("#oejet").style.fill = "red";
 }
 
-document.querySelector("#tentakler").addEventListener("click", calltentakler);
+/*......*/
+document
+  .querySelector("#Layer_Tentakler")
+  .addEventListener("click", calltentakler);
 
 function calltentakler() {
   console.log("tentakler virker...");
@@ -20,6 +23,7 @@ function callben() {
   console.log("ben virker...");
 }
 
+<g id="Layer_Tentakler"></g>;
 /* 
 <button id="oejet">ØJET</button>
 <button id="tentakler">TENTAKLER</button>

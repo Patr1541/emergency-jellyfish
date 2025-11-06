@@ -30,3 +30,175 @@
   margin: 0 0 1.2rem 0;
   padding: 0;
 }
+
+/*................CSS STYLE TIL FORM............*/
+
+/*Reset CSS starter fra lærere*/
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+} */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  interpolate-size: allow-keywords;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2 {
+  line-height: 1.25;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+label {
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  font-size: max(1em, 16px);
+}
+
+textarea {
+  resize: none;
+  min-height: 4lh;
+}
+
+legend {
+  padding: 0;
+}
+
+select,
+::picker(select) {
+  appearance: base-select;
+}
+/*............................*/
+
+h2 {
+  font-size: 25px;
+  color: rgb(87, 128, 128);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: black 2px 2px 4px;
+  padding: 15px;
+  color: rgb(87, 128, 128);
+  font-weight: bolder;
+  letter-spacing: 4px;
+  /*  font-family: "Courier New", Courier, monospace; */
+}
+/*
+- border
+- border-radius
+- padding
+- evt. color, box-shadow*/
+
+/*Farve på hak inde i accept-terms boks*/
+form {
+  accent-color: rgba(255, 90, 20, 0.719);
+}
+
+/*Ram alle grupper, individuelt sammen*/
+.form-group_kontakt {
+  color: rgb(255, 106, 0);
+  box-shadow: rgb(244, 214, 118) 1px 1px 1px 1px;
+  font-weight: bolder;
+  margin: 5px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+/*Ram hele formen*/
+#webform {
+  display: grid;
+  gap: 2rem;
+}
+
+/*Checkbokse / radioknapper - Choose you favorite... med valgmuligheder*/
+/*  FOR HTML:
+
+<label for="spiderman">  
+    <input
+       type="radio"
+       id="spiderman"
+       name="superhero"
+       value="spiderman">
+    Spider-man
+  </label>
+*/
+
+/* CSS: */
+label:has(input) {
+  display: flex;
+  align-items: center;
+  gap: 0.75ch;
+}
+
+label
+
+/*......ADFÆRD OG BRUGEROPLEVELSE.....
+
+-Brugerhandlinger - 
+:focus-visible
+:hover
+:active
+
+-Input-state (tilstandsform)-
+:user-invalid
+:user-valid
+:required
+*/
+
+:focus-visible {
+  outline: 2px solid rgb(181, 202, 23);
+  outline-offset: 1px;
+  /* evt. box-shadow */
+}
+
+button:hover {
+  background-color: red;
+}
+
+.error-message {
+  display: none;
+}

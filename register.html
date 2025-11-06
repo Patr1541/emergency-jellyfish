@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -37,10 +37,83 @@
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Kontaktoplysninger</h2>
+          <br />
         </article>
-        <form id="webform"></form>
+        <form id="webform">
+          <div class="form-group_kontakt">
+            <label for="first_name">Navn</label>
+            <input type="text" id="first_name" name="first_name" />
+            <p class="error-message">Please enter a value</p>
+          </div>
+          <div class="form-group_kontakt">
+            <label for="number">Telefon</label>
+            <input type="number" id="last_name" name="last_name" />
+            <p class="error-message">Please enter a value</p>
+          </div>
+          <div class="form-group_kontakt">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+            <p class="error-message">Please enter a value</p>
+          </div>
+
+          <h2>Indberetning af monster</h2>
+
+          <div class="form-group_kontakt">
+            <label for="observation">Observationssted</label>
+            <input type="text" id="password" name="password" />
+            <p class="error-message">Please enter a value</p>
+          </div>
+
+          <div class="form-group_kontakt">
+            <label for="tid">Tid af observationen</label>
+            <input type="number" id="tid" name="password" />
+            <p class="error-message">Please enter a value</p>
+          </div>
+
+          <div class="form-group_kontakt">
+            <label for="antal">Antal tilskadekommende</label>
+            <input type="number" id="antal" name="antal" />
+            <p class="error-message">Please enter a value</p>
+          </div>
+
+          <div class="form-group_kontakt">
+            <label for="upload">Upload evt. Billede af monster</label>
+            <input type="file" id="file" name="uploadbillede" />
+          </div>
+
+          <br />
+
+          <label for="terms">
+            <input type="checkbox" id="terms" name="accept_terms" value="yes" />
+            Accepter betingelser
+          </label>
+
+          <button>Indberet informationer!</button>
+        </form>
+
+        <!--   <form>
+          ...
+          <label for="spiderman">
+            <input
+              type="radio"
+              id="spiderman"
+              name="superhero"
+              value="spiderman"
+            />
+            Spider-man
+          </label>
+          ...
+          <label for="superman">
+            <input
+              type="radio"
+              id="spiderman"
+              name="superhero"
+              value="spiderman"
+            />
+            Superman
+          </label>
+        </form> -->
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
@@ -49,6 +122,7 @@
         </article>
       </section>
     </main>
+
     <footer>
       <nav class="some">
         <ul>
@@ -76,6 +150,6 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
   </body>
 </html>
