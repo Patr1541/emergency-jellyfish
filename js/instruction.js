@@ -8,7 +8,7 @@ function calleye() {
   document.querySelector("#oejet").style.fill = "red";
 }
 
-/*......*/
+/*...HJÆÆÆÆÆÆÆÆÆÆLP :-D...*/
 document
   .querySelector("#Layer_Tentakler")
   .addEventListener("click", calltentakler);
