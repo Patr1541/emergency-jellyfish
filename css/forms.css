@@ -105,7 +105,8 @@ select,
 ::picker(select) {
   appearance: base-select;
 }
-/*............................*/
+
+/*.............LAV SELV STYLING ETC...............*/
 
 h2 {
   font-size: 25px;
@@ -139,13 +140,17 @@ form {
 /*Ram alle grupper, individuelt sammen*/
 .form-group_kontakt {
   color: rgb(255, 106, 0);
-  box-shadow: rgb(244, 214, 118) 1px 1px 1px 1px;
+  box-shadow: rgb(244, 214, 118) 1px 1px 2px 2px;
   font-weight: bolder;
   margin: 5px;
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
   font-size: 20px;
   letter-spacing: 2px;
+}
+
+button:hover {
+  background-color: rgba(255, 90, 20, 0.719);
 }
 
 /*Ram hele formen*/
@@ -174,8 +179,6 @@ label:has(input) {
   gap: 0.75ch;
 }
 
-label
-
 /*......ADFÆRD OG BRUGEROPLEVELSE.....
 
 -Brugerhandlinger - 
@@ -193,10 +196,6 @@ label
   outline: 2px solid rgb(181, 202, 23);
   outline-offset: 1px;
   /* evt. box-shadow */
-}
-
-button:hover {
-  background-color: red;
 }
 
 .error-message {
