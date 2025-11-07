@@ -1,30 +1,29 @@
-console.log("Halløjsa, måske det virker...");
+console.log("Loaded instructions...");
 
-document.querySelector("#oejet").addEventListener("click", calleye);
+document.querySelector("#oejeknap").addEventListener("click", oejefunktion);
 
-function calleye() {
-  console.log("øjet virker...");
-  document.querySelector("#oejet").classList.add("#aendring1");
-  document.querySelector("#oejet").style.fill = "red";
+function oejefunktion() {
+  console.log("Loaded instructions ØJE...");
+  document.querySelector("#hotspotEye").classList.add("my_scale");
+  document.querySelector("#efficiency").textContent = "peter siger fucking øje";
 }
 
-/*...HJÆÆÆÆÆÆÆÆÆÆLP :-D...*/
+document.querySelector("#fodknap").addEventListener("click", fodfunktion);
+
+function fodfunktion() {
+  console.log("Loaded instructions FØDDER...");
+  document.querySelector("#hotspotFoot").classList.add("my_scale");
+  document.querySelector("#efficiency").textContent =
+    "peter siger fucking fødder";
+}
+
 document
-  .querySelector("#Layer_Tentakler")
-  .addEventListener("click", calltentakler);
+  .querySelector("#tentaklerknap")
+  .addEventListener("click", tentfunktion);
 
-function calltentakler() {
-  console.log("tentakler virker...");
+function tentfunktion() {
+  console.log("Loaded instructions TENTAKLER...");
+  document.querySelector("#hotspotTent").classList.add("my_scale");
+  document.querySelector("#efficiency").textContent =
+    "peter siger fucking tentakler";
 }
-
-document.querySelector("#ben").addEventListener("click", callben);
-
-function callben() {
-  console.log("ben virker...");
-}
-
-<g id="Layer_Tentakler"></g>;
-/* 
-<button id="oejet">ØJET</button>
-<button id="tentakler">TENTAKLER</button>
-<button id="ben">BEN</button> */
