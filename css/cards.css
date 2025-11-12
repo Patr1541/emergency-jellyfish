@@ -87,7 +87,47 @@
   background-color: var(--color-cta-newscard-bg-inverted);
   color: var(--color-text);
 }
-.cta_btn:after {
-  content: "\2192";
+
+summary::after {
+  content: "↓";
   margin-left: 1rem;
 }
+
+[open] summary::after {
+  content: "x";
+}
+
+/* rotate: 90deg
+}
+ */
+[popover]::backdrop {
+  backdrop-filter: blur(2px);
+}
+
+[popover]:popover-open {
+  display: inline;
+  margin: 0 auto;
+  background-color: rgb(245, 245, 211);
+  padding: 2rem;
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+}
+
+[popover]:popover-open img {
+  display: grid;
+}
+
+summary {
+  cursor: pointer;
+}
+
+summary::marker {
+  content: "&#8595";
+}
+
+/* 
+.cta_btn {
+  display: flex;
+  justify-content: space-between;
+} */
