@@ -78,16 +78,11 @@ p {
 .class_hotspot_button:hover {
   transform: scale(2);
 }
-*/
-/* 
-.oeje {
-  display: none;
-}
- */
 
 .my_scale {
   transform: scale(2);
   transform-box: fill-box;
   transform-origin: 50% 50%;
 }
+
 /*Indsæt 'my_scale* id'et ind på oejeknap via JS*/
