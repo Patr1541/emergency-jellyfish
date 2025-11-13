@@ -48,12 +48,13 @@
           </div>
           <div class="form-group_kontakt">
             <label for="number">Telefon</label>
-            <input type="number" id="last_name" name="last_name" />
+            <input type="number" id="telefon_id" name="telefon_id" />
             <p class="error-message">Please enter a value</p>
           </div>
+
           <div class="form-group_kontakt">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
+            <input type="email" id="email_id" name="email_id" />
             <p class="error-message">Please enter a value</p>
           </div>
 
@@ -61,21 +62,66 @@
 
           <div class="form-group_kontakt">
             <label for="observation">Observationssted</label>
-            <input type="text" id="password" name="password" />
+            <input type="text" id="observation_id" name="observation_id" />
             <p class="error-message">Please enter a value</p>
           </div>
 
           <div class="form-group_kontakt">
             <label for="tid">Tid af observationen</label>
-            <input type="number" id="tid" name="password" />
+            <input type="number" id="tid_id" name="tid_id" />
             <p class="error-message">Please enter a value</p>
           </div>
 
           <div class="form-group_kontakt">
             <label for="antal">Antal tilskadekommende</label>
-            <input type="number" id="antal" name="antal" />
+            <input type="number" id="antal_id" name="antal_id" />
             <p class="error-message">Please enter a value</p>
           </div>
+
+          <!--
+          <form>
+            <h4>Spørgsmål radiobutton</h4>
+            <label for="radiobuttons">
+              <input
+                type="radio"
+                id="spiderman"
+                name="superhero"
+                value="spiderman"
+              />
+              Spørgsmål1
+            </label>
+
+            <label for="radiobuttons">
+              <input
+                type="radio"
+                id="spiderman"
+                name="superhero"
+                value="spiderman"
+              />
+              Spørgsmål2
+            </label>
+
+            <label for="radiobuttons">
+              <input
+                type="radio"
+                id="spiderman"
+                name="superhero"
+                value="spiderman"
+              />
+              Spørgsmål3
+            </label>
+            <label for="radiobuttons">
+              <input
+                type="radio"
+                id="spiderman"
+                name="superhero"
+                value="spiderman"
+              />
+              Spørgsmål4
+            </label>
+          </form>
+
+          <br />
 
           <div class="form-group_kontakt">
             <label for="upload">Upload evt. Billede af monster</label>
@@ -83,42 +129,24 @@
           </div>
 
           <br />
-
           <label for="terms">
             <input type="checkbox" id="terms" name="accept_terms" value="yes" />
             Accepter betingelser
           </label>
-
-          <button>Indberet informationer!</button>
+          <br /> -->
+          <button type="submit">Indberet informationer!</button>
         </form>
-
-        <!--   <form>
-          ...
-          <label for="spiderman2">
-            <input
-              type="radio"
-              id="spiderman"
-              name="superhero"
-              value="spiderman"
-            />
-            Spider-man
-          </label>
-          ...
-          <label for="superman">
-            <input
-              type="radio"
-              id="spiderman"
-              name="superhero"
-              value="spiderman"
-            />
-            Superman
-          </label>
-        </form> -->
       </section>
       <section id="form-summary">
-        <h2>Summary INDSÆT</h2>
+        <h2>Opsummering</h2>
         <article>
-          <p class="placeholder">Opsummering</p>
+          <p class="placeholder">Du har indsendt følgende informationer:</p>
+          <div id="first_name_output">d</div>
+          <div id="telefon_id_output">d</div>
+          <div id="email_id_output">d</div>
+          <div id="observation_id_output">d</div>
+          <div id="tid_id_output">d</div>
+          <div id="antal_id_output">d</div>
         </article>
       </section>
     </main>
@@ -126,10 +154,10 @@
     <footer>
       <nav class="some">
         <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
+          <li><a href="">link</a>Tekst1</li>
+          <li><a href="">link</a>Tekst2</li>
+          <li><a href="">link</a>Tekst3</li>
+          <li><a href="">link</a>Tekst4</li>
         </ul>
       </nav>
       <nav class="another">
@@ -151,6 +179,7 @@
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/form.js"></script>
+
+    <script src="js/formpt2.js"></script>
   </body>
 </html>

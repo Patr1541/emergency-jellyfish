@@ -22,3 +22,18 @@ function handleSubmit(event) {
 }
 
 myForm.addEventListener("submit", handleSubmit);
+
+/*...................*/
+
+const form = document.querySelector("webform");
+
+const firstNameOutput = document.querySelector("#first_name_output");
+const lastNameOutput = document.querySelector("#last_name_output");
+const emailOutput = document.querySelector("#email_output");
+const passwordOutput = document.querySelector("#password_output");
+const termsOutput = document.querySelector("#terms_output");
+
+function cancelPopup(event) {
+  event.preventDefault();
+  form.querySelector(":user-invalid").focus();
+}

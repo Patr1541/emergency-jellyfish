@@ -108,7 +108,8 @@ select,
 
 /*.............LAV SELV STYLING ETC...............*/
 
-h2 {
+h2,
+h4 {
   font-size: 25px;
   color: rgb(87, 128, 128);
   font-family: "Courier New", Courier, monospace;
@@ -136,6 +137,10 @@ button {
 form {
   accent-color: rgba(255, 90, 20, 0.719);
 }
+
+/* form h4 {
+  color: blue;
+} */
 
 /*Ram alle grupper, individuelt sammen*/
 .form-group_kontakt {
