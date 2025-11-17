@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,14 +12,17 @@
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
     <link rel="stylesheet" href="css/infographic.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
+    <link rel="icon" type="image/png" href="img/ny.faveicon.svg" />
     <title>Emergency Site</title>
   </head>
   <body id="instruction">
     <header>
+      <div class="menutoggle">
+        <button id="toggle">Darkmode Button</button>
+      </div>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html"><img src="img/FavIconsvg.svg" alt="" /></a>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
@@ -985,10 +988,18 @@
           <p class="placeholder">TIPS & TRICKS</p>
         </article>
         <aside id="efficiency" class="info-box">
-          Klik på knapper for tekst
+          Når man taler om Calorina, den flamencodansende vandmand, er det
+          umuligt at ignorere hendes dobbelte natur. Hun er både frygtet og
+          beundret, en skabning der kan bringe verden i rytmisk harmoni, eller
+          lade den gå under i lava. For at forstå hendes indflydelse må man se
+          på de kræfter, hun besidder, og de svagheder, der følger med. Derfor
+          er Calorina både en beskytter og en trussel, en levende balance mellem
+          flamencoens ild og havets kulde. Infoboksene nederst i billedet giver
+          et overblik over hendes vigtigste fordele og ulemper ved et enkelt
+          tryk på
         </aside>
-        <!--         <aside id="requirement" class="info-box">INFO-BOX 2 bla</aside>
-        <aside id="requirement" class="info-box">INFO-BOX 3</aside> -->
+        <aside id="requirement" class="info-box">Fordele</aside>
+        <aside id="requirement" class="info-box">Ulemper</aside>
       </section>
     </main>
 
@@ -1022,5 +1033,6 @@
     <script src="js/instruction.js"></script>
     <script src="js/main.js"></script>
     <script src="js/burger.js"></script>
+    <script src="js/darkmode.js"></script>
   </body>
 </html>

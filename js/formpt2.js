@@ -1,3 +1,4 @@
+/*Konstanter og indsættelse af data fra form til summary*/
 const form = document.querySelector("form");
 
 const firstOutput = document.querySelector("#first_name_output");
@@ -31,3 +32,10 @@ function handleSubmit(event) {
   form.reset();
 }
 form.addEventListener("submit", handleSubmit);
+
+/*....Herefter indsæt fra javascript-form-side-original: Cancel pop-up og errormessages ....*/
+
+function cancelPopup(event) {
+  event.preventDefault();
+  form.querySelector(":user-invalid").focus();
+}

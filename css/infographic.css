@@ -41,18 +41,30 @@
   background-color: var(--color-infobox-2-bg);
 }
 
-.aendring1 {
+/* .aendring1 {
   fill: red;
-}
+} */
 
 #buttons {
   display: flex;
   flex-direction: 1fr 1fr 1fr;
   justify-content: center;
-  gap: 150px;
+  gap: 50px;
   margin: 20px;
-  padding-top: 20px;
+  padding: 20px;
   font-size: 30px;
+}
+
+#fodknap:hover {
+  opacity: 20%;
+}
+
+#tentaklerknap:hover {
+  opacity: 20%;
+}
+
+#oejeknap:hover {
+  opacity: 15%;
 }
 
 .info-graphic {

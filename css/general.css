@@ -1,21 +1,32 @@
 html {
+  color-scheme: light;
   font-family: var(--font-family-sans);
   color: var(--color-text);
   background-color: var(--color-bg);
 }
 
+/*SAT IND*/
+
+/* html {
+  color: light;
+} */
+
+html.dark {
+  color-scheme: dark;
+}
+
 header {
   height: min-content;
+  padding-bottom: 2rem;
 }
 
 #main-disclamer {
   height: 225px;
   background-color: var(--color-head-bg);
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  padding-left: 2rem;
-  padding-bottom: 2%;
+  padding: 1rem;
   margin-bottom: var(--margin-head-bottom);
 }
 
