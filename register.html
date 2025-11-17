@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,14 +12,17 @@
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
     <link rel="stylesheet" href="css/forms.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
+    <link rel="icon" type="image/png" href="img/ny.faveicon.svg" />
     <title>Emergency Site</title>
   </head>
   <body id="register">
     <header>
+      <div class="menutoggle">
+        <button id="toggle">Darkmode Button</button>
+      </div>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html"><img src="img/FavIconsvg.svg" alt="" /></a>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
@@ -47,13 +50,14 @@
             <p class="error-message">Please enter a value</p>
           </div>
           <div class="form-group_kontakt">
-            <label for="number">Telefon</label>
+            <label for="telefon_id">Telefon</label>
+
             <input type="number" id="telefon_id" name="telefon_id" />
             <p class="error-message">Please enter a value</p>
           </div>
 
           <div class="form-group_kontakt">
-            <label for="email">Email</label>
+            <label for="email_id">Email</label>
             <input type="email" id="email_id" name="email_id" />
             <p class="error-message">Please enter a value</p>
           </div>
@@ -61,19 +65,19 @@
           <h2>Indberetning af monster</h2>
 
           <div class="form-group_kontakt">
-            <label for="observation">Observationssted</label>
+            <label for="observation_id">Observationssted</label>
             <input type="text" id="observation_id" name="observation_id" />
             <p class="error-message">Please enter a value</p>
           </div>
 
           <div class="form-group_kontakt">
-            <label for="tid">Tid af observationen</label>
+            <label for="tid_id">Tid af observationen</label>
             <input type="number" id="tid_id" name="tid_id" />
             <p class="error-message">Please enter a value</p>
           </div>
 
           <div class="form-group_kontakt">
-            <label for="antal">Antal tilskadekommende</label>
+            <label for="antal_id">Antal tilskadekommende</label>
             <input type="number" id="antal_id" name="antal_id" />
             <p class="error-message">Please enter a value</p>
           </div>
@@ -128,12 +132,13 @@
             <input type="file" id="file" name="uploadbillede" />
           </div>
 
-          <br />
+         <br />
           <label for="terms">
             <input type="checkbox" id="terms" name="accept_terms" value="yes" />
             Accepter betingelser
           </label>
           <br /> -->
+
           <button type="submit">Indberet informationer!</button>
         </form>
       </section>
@@ -141,12 +146,12 @@
         <h2>Opsummering</h2>
         <article>
           <p class="placeholder">Du har indsendt følgende informationer:</p>
-          <div id="first_name_output">d</div>
-          <div id="telefon_id_output">d</div>
-          <div id="email_id_output">d</div>
-          <div id="observation_id_output">d</div>
-          <div id="tid_id_output">d</div>
-          <div id="antal_id_output">d</div>
+          <div id="first_name_output">Navn:</div>
+          <div id="telefon_id_output">Telefon:</div>
+          <div id="email_id_output">Email:</div>
+          <div id="observation_id_output">Oberservationssted:</div>
+          <div id="tid_id_output">Tid:</div>
+          <div id="antal_id_output">Antal tildskadekommende:</div>
         </article>
       </section>
     </main>
@@ -179,7 +184,7 @@
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/main.js"></script>
-
     <script src="js/formpt2.js"></script>
+    <script src="js/darkmode.js"></script>
   </body>
 </html>

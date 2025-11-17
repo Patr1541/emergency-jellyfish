@@ -1,20 +1,25 @@
 :root {
   /* Colours */
-  --color-bg: #fceb94; /* page background /*
+  --color-bg: light-dark(#fceb94, #707070); /* page background /*
+
+
 
   /* Header */
   --color-head-bg: #ff4b00;
 
   /* Logotype */
-  --color-logotype-bg: #000;
-  --color-text-logotype: #fffae2;
+  --color-logotype-bg: light-dark(#ffa680, #fffae2);
+  --color-text-logotype: light-dark(#fffae2, #494949);
   --font-logotype-size: 2rem;
 
   /* Global menu */
-  --color-menu-bg: #6f90eb;
+  --color-menu-bg: light-dark(
+    #6f90eb,
+    #d9e3ff
+  ); /*darkmode undtagen header? #D9E3FF*/
   /* Links */
-  --color-link-bg: #fffae2;
-  --color-link-hover: #fff; /* used */
+  --color-link-bg: light-dark(#fffae2, #494949);
+  --color-link-hover: light-dark(#890b0b, #ffa680); /* used */
   --color-link-active: #99958f; /* used */
   --border-radius-links: 37px;
 
@@ -23,12 +28,12 @@
   --font-sub1-size: 48px;
   --font-h2-size: 36px;
   --font-h3-size: 32px;
-  --color-headline-bg: #000;
-  --color-headline-text-page: #fffae2;
+  --color-headline-bg: light-dark(#000, #fffae2);
+  --color-headline-text-page: light-dark(#fffae2, #494949);
 
   /* Tekst */
-  --color-text: #000;
-  --color-text-inverted: #fff;
+  --color-text: light-dark(#000, #fffae2);
+  --color-text-inverted: light-dark(#fff, #494949);
 
   /*  Marginer */
   --margin-head-bottom: 40px;
@@ -37,12 +42,12 @@
   --border-radius: 37px;
 
   /* Cards */
-  --color-card-bg: #fff;
+  --color-card-bg: light-dark(#fff, #586556);
   --color-cta-card-bg: #ff4b00;
   /* news-cards */
-  --color-news-bg: #fffae2;
-  --color-news-bg-inverted: #dbe2f5;
-  --color-cta-newscard-bg: #ffa680;
+  --color-news-bg: light-dark(#fffae2, #494949);
+  --color-news-bg-inverted: light-dark(#dbe2f5, #272727);
+  --color-cta-newscard-bg: light-dark(#ffa680, #7a5748);
   --color-cta-newscard-bg-inverted: #6f90eb;
 
   /* Fonts */
@@ -66,4 +71,44 @@
   --color-info-bg: #676161;
   --color-infobox-1-bg: #cfcec6;
   --color-infobox-2-bg: #969995;
+}
+
+/*........................DARKMODE...........................*/
+
+/* Demo styles */
+
+/* body {
+  padding: 2rlh;
+}
+
+section {
+  max-inline-size: 65ch;
+  margin-inline: auto;
+  > * + * {
+    margin-block-start: 1rlh;
+  }
+} */
+
+button {
+  border: none;
+  background: Canvas;
+  color: CanvasText;
+  border: 1px solid currentColor;
+  text-box: cap alphabetic;
+  padding: 1cap;
+  border-radius: 5px;
+  display: block;
+  cursor: pointer;
+  margin-block: 1.5rlh;
+}
+
+#toggle {
+  border-radius: 10px;
+  background-color: #6f90eb;
+  text-decoration: none;
+}
+
+#toggle.active {
+  background: #10c033;
+  color: #fff;
 }
